@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Fleur+De+Leah&family=Imperial+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rouge+Script&display=swap");
+.usercard{
+    border: 1px solid #ccc;
+      border-radius:8px;
+      padding:1rem;
+      margin-bottom:1rem ;  
+}
+h3{
+  font-size: 25px;
+  color: pink;
+  font-family: 'Imperial Script',cursive ;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
