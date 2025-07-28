@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+.container{
+    width: 100%;
+    min-height: 20vh;
+    /* background-image:url(IMAGES/_.jpeg); */
+    
+    /* background-image:linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); */
+}
+nav{
+    width:100%;
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+padding: 20px  40px;
+}
+.logo{width:160px;
+      cursor: pointer;
+    margin :20px;
+    }
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    text-align:right;
+    padding-right:100px;
+    padding-top: 10px;
+
+}
+nav ul li{
+    display:inline-block;
+    margin:10px 10px;
+
+
+}
+nav ul li a{
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+        
+}
+.main-text{   
+    max-width: 80%;
+    margin-left: 30px;
+    margin-top: 50px;
+    
+}
+
+ .main-text h1{
+    font-size: 70px;
+    font-weight:bold;
+}
+.enroll-btn{
+    display: inline-block;
+    color: black;
+    background-color: orange;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 18px;
+    padding: 12px 25px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.enroll-btn:hover{
+    background-color: blue;
+
+}
+
+.hero-image{
+    text-align:right;
+    padding-bottom: 20%;
+    justify-content: space-evenly;
+    margin-right: 50px;
+}
+.hero-image img{
+    max-width: 600px;
+    border-radius: 10px;
+    height: auto;
+}
+.part-3{
+    margin-top: 3%;
+    background-color: aqua;
+}
+.content h1{
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.courses{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    width: auto;
+
+}
+.courses.course1{
+    display: flex;
+    text-align: left;
+    padding-right: 50%;
+}
+.courses.course2{
+    text-align: center;
+    padding-left: 50%;
+    padding-right: 50%;
+    flex-wrap: nowrap;
+}
+/* .team{
+    display: flex;
+    width: auto;
+    margin-top: 5%;
+    
+} */
+ .team h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 55px;
+    
+
+}
+.team-members{
+    display: flex;
+    width: auto;
+    text-align: center;
+    justify-content: space-around;
+}
+.forms h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 55px;
+}
+.f1{
+    padding-left: 70%;
+    flex-direction: row-reverse;
+    
+}
+.submit-btn input[type="submit"]{
+    background-color:orange;
+    color: black;
+    border: none;
+    text-align: center;
+    padding:10px 25px;
+    border-radius:8px;
+    font-size:16px;
+    cursor: pointer;
+    transition: backgroung-color 0.3px ease;
+    margin-bottom: 20px;
+}
+.submit-btn input[type="submit"]:hover{
+    background-color: blue;
+}
+.footer{
+    width:100% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 30vh;
+    text-transform: lowercase;
+    background-color: aqua;
+}
+.column .logo-pic{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.column2 ul{
+    list-style: none;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+}
+.column2 ul li a{
+    text-decoration: none;
+    color: black;
+}
+.column1 ul li{
+    font-weight: bold;
+    font-size: 15px;
+    list-style: none;
+}
+.column p{
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 30px;
+}
+.column3{
+    margin-right: 70px;
+}
+.socials{
+    justify-content: space-between;
+    display: flex;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .nav-links{
+list-style: none;
+display: flex;
+gap: 25px;}
+nav-links a{
+text-decoration: none;
+color: darkred;
+font-weight: bold;
+font-size:20px
+.nav-links a:hover{color:orange;} */
+
+
