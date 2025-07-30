@@ -1,0 +1,22 @@
+/* External CSS file */
+
+h1, h2 {
+  font-weight: bold;
+  text-align: center;
+  color: #1a237e;
+}
+
+.profile-card {
+  background-color: #e1bee7;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#intro {
+  background-color: #fce4ec;
+  border-left: 6px solid #ad1457;
+  padding: 15px;
+  margin: 20px;
+}
