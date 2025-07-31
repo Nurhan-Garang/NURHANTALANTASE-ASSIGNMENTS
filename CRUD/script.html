@@ -1,0 +1,79 @@
+let products = [];
+let editingIndex = null; 
+
+const productForm = document.getElementById("productForm");
+const productList = document.getElementById("productList");
+
+// 🌷 Handle Form Submit
+productForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("productName").value;
+  const image = document.getElementById("productImage").value;
+  const price = document.getElementById("productPrice").value;
+  const description = document.getElementById("productDescription").value;
+  const rating = document.getElementById("productRating").value;
+
+  const product = { name, image, price, description, rating };
+
+  if (editingIndex === null) {
+    products.push(product); // Add
+  } else {
+    products[editingIndex] = product; // Update
+    editingIndex = null;
+  }
+
+  productForm.reset();
+  renderProducts();
+});
+
+// 🌷 Display Products
+function renderProducts() {
+  productList.innerHTML = ""; // Clear before re-rendering
+
+  products.forEach((product, index) => {
+    const card = document.createElement("div");
+    card.className = "product-card";
+
+    card.innerHTML = `
+      <img src="product.image" alt="product.name" />
+      <h3>product.nam</h3>
+      <p>product.price</p>
+      <p>product.description</p>
+      <p>product.rating</p>
+      <button onclick="editProduct(index)">Edit</button>
+      <button onclick="deleteProduct(index)">Delete</button>
+      <button onclick="viewProduct(index)">View</button>
+    `;
+
+    productList.appendChild(card);
+  });
+}
+
+// 🌷 Edit Product
+function editProduct(index) {
+  const product = products[index];
+  document.getElementById("productName").value = product.name;
+  document.getElementById("productImage").value = product.image;
+  document.getElementById("productPrice").value = product.price;
+  document.getElementById("productDescription").value = product.description;
+  document.getElementById("productRating").value = product.rating;
+  editingIndex = index;
+}
+
+// 🌷 Delete Product
+function deleteProduct(index) {
+  if (confirm("Are you sure you want to delete this product?")) {
+    products.splice(index, 1);
+    renderProducts();
+  }
+}
+
+// 🌷 View Product (Simplified)
+function viewProduct(index) {
+  const product = products[index];
+  alert(
+    'product.name + " " + " Price:" + " " + product.price + " " + "Description:" + " " + product.description + " " + "Rating:" + " " + product.rating'
+  );
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to the CRUD Application</h1>
+    <p>This is a simple CRUD (Create, Read, Update, Delete) application.</p>
+      
+
+
+  <form id="productForm">
+    <input type="text" id="productName" placeholder="Product Name" required />
+    <input type="text" id="productImage" placeholder="Image URL" required />
+    <input type="number" id="productPrice" placeholder="Price" required />
+    <input type="text" id="productDescription" placeholder="Description" required />
+    <input type="number" id="productRating" placeholder="Rating (1-5)" min="1" max="5" required />
+    <button type="submit">Add Product</button>
+  </form>
+
+  <hr/>
+
+
+  <div id="productList" class="product-list"></div>
+  <script src="script.js"></script>
+</body>
+</html>
