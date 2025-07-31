@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player 🎵</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Welcome, <span id="user-name"></span>!</h2>
+
+  <div id="player-container">
+    <audio id="audio" controls></audio>
+
+    <div>
+      <button onclick="playPrevious()">Prev</button>
+      <button onclick="togglePlay()">Play/Pause</button>
+      <button onclick="playNext()">Next</button>
+      <button onclick="toggleLoop()">Loop</button>
+      <button onclick="shuffleSongs()">Shuffle</button>
+    </div>
+
+    <input type="range" id="seekSlider" min="0" value="0">
+
+    <div id="song-info">
+      <p><strong>Now Playing:</strong> <span id="current-song"></span></p>
+    </div>
+
+    <ul id="song-list"></ul>
+  </div>
+
+  <script src="player.js"></script>
+</body>
+</html>
